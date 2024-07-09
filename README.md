@@ -23,4 +23,4 @@ We are going to use data from  [ERP CORE](https://erpinfo.org/erp-core).
 
 ## References 
 Beres, A.M. Time is of the Essence: A Review of Electroencephalography (EEG) and Event-Related Brain Potentials (ERPs) in Language Research. Appl Psychophysiol Biofeedback 42, 247–255 (2017). [https://doi.org/10.1007/s10484-017-9371-3](https://link.springer.com/article/10.1007/s10484-017-9371-3)
-Luck, S. J. (2014). An introduction to the event-related potential technique. MIT press.
+<br/>Luck, S. J. (2014). An introduction to the event-related potential technique. MIT press.
