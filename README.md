@@ -14,7 +14,7 @@ For the installation of MNE-Python you can check it [here](https://mne.tools/sta
 First one is with MNE installer and the second one is with pip or conda. If this is your first time and you are not familiar with Python yet, I would recommend you to use MNE installer. 
 However if you wanna try to install it through the command prompt, I would suggest you to download [Anaconda](https://www.anaconda.com/download), there you will have the conda prompt and other packages for data science. 
 If you download [Anaconda](https://www.anaconda.com/download), you will also have [Spyder](https://www.spyder-ide.org/), an environment that is commonly used in data science. Just for an idea, if you are not
-familiar with Python but you use R-studio, [Spyder](https://www.spyder-ide.org/) gives you an interface like R-studio. 
+familiar with Python but you use R-studio, [Spyder](https://www.spyder-ide.org/) gives you an interface like R-studio. Just like you can R directly without R-studio; here, you can also run MNE from the command prompt. Hence, the use of [Spyder](https://www.spyder-ide.org/) is optional.
 
 *Note: you only need to do this if you wanna work on your own laptop, because the summer school organizer prepared the PC and installed this as well. Thus, you only need to download the EEG raw data.*
 
