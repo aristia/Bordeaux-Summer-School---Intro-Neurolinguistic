@@ -16,7 +16,7 @@ However if you wanna try to install it through the command prompt, I would sugge
 If you download [Anaconda](https://www.anaconda.com/download), you will also have [Spyder](https://www.spyder-ide.org/), an environment that is commonly used in data science. Just for an idea, if you are not
 familiar with Python but you use R-studio, [Spyder](https://www.spyder-ide.org/) gives you an interface like R-studio. 
 
-*Note: you only need to do this if you wanna work on your own laptop, because the summer school organizer prepared the PC as well. So, nothing to worried about :)*
+*Note: you only need to do this if you wanna work on your own laptop, because the summer school organizer prepared the PC and installed this as well. Thus, you only need to download the EEG raw data.*
 
 ### EEG data
 We are going to use data from  [ERP CORE](https://erpinfo.org/erp-core).  
