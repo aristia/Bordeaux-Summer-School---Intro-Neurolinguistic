@@ -1,12 +1,19 @@
 # Bordeaux Summer School 2024 <br/> Project 8: Introduction to Neurolinguistic
 
-In this project you will learn about why we bother to look at the brain to study language processing. 
-Due to this endevour to understand the how language is processed *(for now, we will only focus on this!)*  and produced by the brain we have neurolinguistics.
-There are several methods that are used to study the brain and one of them is electroencephalography (EEG). 
-In this project, we will see how EEG is used in language processing study and how to do one of the most common analysis method that is event-related-potential (ERP). 
-I will introduce you what are the common ERP components that are normally observed in neurolinguistic studies. 
-To do this we will analyze data from [ERP CORE](https://erpinfo.org/erp-core) datasets that is provided by Steve J Luck lab. 
-ERP CORE has several datasets, for the purpose of this project, we will use N400 datasets because N400 is a common ERP component that is normally observed in neurolinguistic studies.  
+In this project, you will learn why we look at the brain to study language processing. Due to this endeavor to understand how language is processed and produced by the brain, we have neurolinguistics.</br> 
+There are several methods used to study the brain, one of which is electroencephalography (EEG). In this project, we will see how EEG is used in language processing studies and how to perform 
+one of the most common analysis methods, event-related potential (ERP).</br>
+I will introduce you to the common ERP components that are normally observed in neurolinguistic studies. 
+To do this, we will analyze data from the [ERP CORE](https://erpinfo.org/erp-core) datasets provided by Steve J. Luck's lab. 
+ERP CORE has several datasets; for the purpose of this project, we will use the N400 datasets because the N400 is a common ERP component that is normally observed in neurolinguistic studies.
+
+## Plan
+**Day 1 (15/7)** : Theoritical background behind language studies and the use of EEG *(and how to design the experiment)*</br>
+**Day 2 (16/7)** : EEG pre-processing</br> 
+**Day 3 (17/7)** : EEG demo and EEG pre-processing</br>
+**Day 4 (18/7)** : Epochs selection, Evoked generating, plot</br>
+**Day 5 (19/7)** : Statistical analysis</br>
+**Day 6 (20/7)** : Presentation
 
 ## Software for EEG pre-processing and analysis
 There are several softwares (e.g., BrainVision Analyzer, BESA, Cartool, EEGLAB, MNE, etc) that you can use to do pre-processing. In reality, you can actually use whatever you want. However, for this summer school, I would recommend you to use MNE which is an open source Python package. 
