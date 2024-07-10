@@ -9,7 +9,7 @@ ERP CORE has several datasets; for the purpose of this project, we will use the 
 
 ## Plan
 **Day 1 (15/7)** : Theoritical background behind language studies and the use of EEG *(and how to design the experiment)*</br>
-**Day 2 (16/7)** : EEG pre-processing</br> 
+**Day 2 (16/7)** : EEG pre-processing (filtering and artifacts removal)</br> 
 **Day 3 (17/7)** : EEG demo and EEG pre-processing & epochs selection</br>
 **Day 4 (18/7)** : Epochs selection, Evoked generating, plot</br>
 **Day 5 (19/7)** : Statistical analysis</br>
