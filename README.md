@@ -27,7 +27,9 @@ Just like you can use R directly without R-studio; here, you can also run MNE fr
 *Note: you only need to do this if you wanna work on your own laptop, because the summer school organizer prepared the PC and installed this as well. Thus, you only need to download the EEG raw data.*
 
 ### EEG data
-We are going to use data from  [ERP CORE](https://erpinfo.org/erp-core).  
+We are going to use data from  [ERP CORE](https://erpinfo.org/erp-core). I have put the data here in this repository, they are downsampled already. Nonetheless, feel free to check their original 
+data in their OSF site. I put it here along with information about the experiment, so that you don't get confuse as there are quite lots of data there (which is very good, but I don't want to overwhelm you with 
+them).  
 
 ## References 
 1. Beres, A.M. (2017). Time is of the Essence: A Review of Electroencephalography (EEG) and Event-Related Brain Potentials (ERPs) in Language Research. Appl Psychophysiol Biofeedback 42, 247–255. [https://doi.org/10.1007/s10484-017-9371-3](https://link.springer.com/article/10.1007/s10484-017-9371-3)
