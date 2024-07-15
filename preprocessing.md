@@ -6,11 +6,17 @@ For the preprocessing steps we are following [Steve Luck's guide](https://erpinf
 3. Re-referencing
 4. Epoch selection and baseline correction
 5. Averaging data from individual data of the participant
-6. Grand averaging from all participants' data
+6. Grand averaging from all participants' data </br>
+
+>[!NOTE]
+>You can save your script with .py extension. This way when you open it with a text editor you will have it colored following the color-scheme.
+
+
 ## Read the data </br>
 ```
 ### to read data from EEGLAB
 raw  = mne.io.read_raw_eeglab('***YOUR DIRECTORY****/{}/{}_N400.set' .format (participant, participant), preload = True)
+
 ### to read fif file
 raw = mne.io.read_raw_fif('**YOUR DIRECTORY****/{}/{}_N400-raw.fif' .format (participant, participant), preload = True)
 ```
