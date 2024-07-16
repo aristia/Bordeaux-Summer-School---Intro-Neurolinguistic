@@ -11,6 +11,14 @@ For the preprocessing steps we are following [Steve Luck's guide](https://erpinf
 >[!NOTE]
 >You can save your script with .py extension. This way when you open it with a text editor you will have it colored following the color-scheme.
 
+## Import Python packages 
+```
+import mne
+import os
+import pandas as pd
+from mne.preprocessing import ICA
+```
+
 ## Import Python package dependencies
 import mne
 import mne
