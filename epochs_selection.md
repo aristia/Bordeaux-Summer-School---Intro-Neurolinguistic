@@ -67,8 +67,17 @@ for participant in participants :
     ## Alternatively we can mark the bad channels by doing this
     epochs.info['bads'] = ['***name of the bad electrodes****']
     # If we have time we can try to use eelbrain here ...
+
+    #If we try to check the individual epoch with eelbrain
+    gui.select_epochs(epochs, vlim=None)
+    gui.run(block=False)
+    rejfile = load.unpickle('C:/Users/jaris/Documents/summer_school/raw/{}/{}.pickle' .format (participant, participant)) ## here we open the pickle file
+    rejs = rejfile['accept'].x
+    epochs_rej=epochs[rejs]
+    
     # if not continue
-    epochs_interp = epochs.copy().interpolate_bads(reset_bads=True) ### Interpolation using alogarithm to alter signal from bad electrode/s, reset bads will return the bad channel to bads = [] 
+    epochs_interp = epochs_rej.copy().interpolate_bads(reset_bads=True) ### Interpolation using alogarithm to alter signal from bad electrode/s,
+    reset bads will return the bad channel to bads = [] 
     epochs_interp.save('C:/Users/jaris/Documents/summer_school/raw/{}/{}_N400-epo.fif' .format (participant, participant))
     del raw, events, event_id, epochs, epochs_interp   
 ```
