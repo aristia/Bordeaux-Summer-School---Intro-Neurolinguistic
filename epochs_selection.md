@@ -75,8 +75,7 @@ for participant in participants :
     epochs_rej=epochs[rejs]
     
     # if not continue
-    epochs_interp = epochs_rej.copy().interpolate_bads(reset_bads=True) ### Interpolation using alogarithm to alter signal from bad electrode/s,
-    reset bads will return the bad channel to bads = [] 
+    epochs_interp = epochs_rej.copy().interpolate_bads(reset_bads=True) ### Interpolation using alogarithm to alter signal from bad electrode/s, reset bads will return the bad channel to bads = [] 
     epochs_interp.save('C:/Users/jaris/Documents/summer_school/raw/{}/{}_N400-epo.fif' .format (participant, participant))
     del raw, events, event_id, epochs, epochs_interp   
 ```
