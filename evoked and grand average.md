@@ -16,7 +16,7 @@ for participant in participants :
 Ok, that's all for evoked.  Let's do the grand average now. 
 
 # Grand-average
-## Read the evokeds
+First, we read the evokeds.
 ```python
 evokeds = []
 for participant in participants : 
