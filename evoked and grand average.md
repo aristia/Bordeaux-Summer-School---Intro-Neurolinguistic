@@ -3,6 +3,7 @@
 But, don't worry. This is an automatic process, no need to eye-balling the individual data. 
 
 ```python
+## Define the experimental conditions
 conditions = ('prime_related', 'prime_unrelated', 'target_related', 'target_unrelated')
 for participant in participants : 
     evokeds =[]
