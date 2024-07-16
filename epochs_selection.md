@@ -47,7 +47,6 @@ to be noisy electrodes in the epochs. To do this, we need to plot the epochs.
 for participant in participants : 
     raw = mne.io.read_raw_fif('C:/Users/jaris/Documents/summer_school/raw/{}/{}_N400_ica-raw.fif' .format (participant, participant), preload = True)
     raw.set_channel_types({'HEOG_left':'eog', 'HEOG_right':'eog', 'VEOG_lower':'eog'})
-    raw.info['bads']=['Fp1', 'Fp2']
     raw.annotations.description = pd.Series(raw.annotations.description).map(description_dict).to_numpy()
     set(raw.annotations.description)
     events, event_id = mne.events_from_annotations(raw, event_ids)
