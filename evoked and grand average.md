@@ -13,7 +13,7 @@ from mne.preprocessing import ICA
 
 
 ###Get the participants
-os.chdir('C:/Users/jaris/Documents/summer_school/raw/')
+os.chdir('***YOUR DIRECTORY***')
 participants = []
 for file in glob.glob ("*"):
     participant = file
@@ -28,9 +28,9 @@ conditions = ('prime_related', 'prime_unrelated', 'target_related', 'target_unre
 for participant in participants : 
     evokeds =[]
     for cond in conditions :
-        epochs = mne.read_epochs('C:/Users/jaris/Documents/summer_school/raw/{}/{}_N400-epo.fif' .format (participant, participant))
+        epochs = mne.read_epochs('***YOUR DIRECTORY***/{}/{}_N400-epo.fif' .format (participant, participant))
         evokeds.append(epochs[cond].average())  ## this is averaging data of each condition in each participant
-    mne.write_evokeds('C:/Users/jaris/Documents/summer_school/raw/{}/{}_N400-ave.fif' .format (participant, participant), evokeds)
+    mne.write_evokeds('***YOUR DIRECTORY***/{}/{}_N400-ave.fif' .format (participant, participant), evokeds)
     del evokeds, epochs
 ```
 
@@ -41,7 +41,7 @@ First, we read the evokeds.
 ```python
 evokeds = []
 for participant in participants : 
-    evoked = mne.read_evokeds('C:/Users/jaris/Documents/summer_school/raw/{}/{}_N400-ave.fif' .format (participant, participant))
+    evoked = mne.read_evokeds('***YOUR DIRECTORY***/{}/{}_N400-ave.fif' .format (participant, participant))
     evokeds.append(evoked)
 ```
 Here we have all evokeds from all participants together. To create the grand average, we wanna seperate them based on the condition.
