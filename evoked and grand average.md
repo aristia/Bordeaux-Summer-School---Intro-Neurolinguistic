@@ -1,6 +1,26 @@
 # This is how to create evoked per participant
 
-But, don't worry. This is an automatic process, no need to eye-balling the individual data. 
+But, don't worry. This is an automatic process, no need to eye-balling the individual data. </br>
+Import the packages and get the participants.
+
+```python
+import mne
+import os
+import glob
+import pandas as pd
+import eelbrain
+from mne.preprocessing import ICA
+
+
+###Get the participants
+os.chdir('C:/Users/jaris/Documents/summer_school/raw/')
+participants = []
+for file in glob.glob ("*"):
+    participant = file
+    participants.append(participant)
+```
+
+We are ready to get the evokeds.
 
 ```python
 ## Define the experimental conditions
