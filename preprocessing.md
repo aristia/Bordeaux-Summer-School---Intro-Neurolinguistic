@@ -12,22 +12,16 @@ For the preprocessing steps we are following [Steve Luck's guide](https://erpinf
 >You can save your script with .py extension. This way when you open it with a text editor you will have it colored following the color-scheme.
 
 ## Import Python packages 
-```
+```python
 import mne
 import os
 import pandas as pd
 from mne.preprocessing import ICA
 ```
 
-## Import Python package dependencies
-import mne
-import mne
-import os
-import pandas as pd
-from mne.preprocessing import ICA
 
 ## Read the data </br>
-```
+```python
 ### to read data from EEGLAB
 raw  = mne.io.read_raw_eeglab('***YOUR DIRECTORY****/{}/{}_N400.set' .format (participant, participant), preload = True)
 
@@ -39,13 +33,13 @@ raw = mne.io.read_raw_fif('**YOUR DIRECTORY****/{}/{}_N400-raw.fif' .format (par
 
 Here we are doing a band-pass filter wherein the high cut-off is 0.1 Hz and low cut-off is 30 Hz. This cut-off is a classic recommendation by Luck.
 However, he published [new papers](https://erpinfo.org/blog/2024/2/4/optimal-filters) with his team wherein they provide new filter recommendation to get a better result.
-```
+```python
 raw.filter(0.1, 30, method='iir')
 ```
 ## ICA
 Let's remove eye movement artifacts with ICA
 
-```
+```python
 ###set up the montage, we need to do this so we can see the topo plot of the ica
 montage = mne.channels.make_standard_montage('biosemi64') ##define the montage using built-in montage file from MNE
 
@@ -75,7 +69,7 @@ del raw, montage
 
 ### Loop for the participants 
 Ok, we make loop here but we need to select the bad component individually per participant. 
-```
+```python
 ### Specify the participant that you wanna work on
 participants = ['1']
 for participants in participant :
