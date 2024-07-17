@@ -1,4 +1,4 @@
-# Statistic analysis
+# Statistical analysis
 To compare the experimental condition (i.e., related and unrelated), we can run a t-test.
 
 ## Import the package
@@ -8,7 +8,7 @@ import scipy
 from scipy import stats
 ```
 
-The following code to run the analysis is adapted from [neural data science page](https://neuraldatascience.io/7-eeg/erp_group_stats.html) - **this site is also a good source to learn EEG analysis*.
+The following code to run the analysis is adapted from [neural data science page](https://neuraldatascience.io/7-eeg/erp_group_stats.html) - *this site is also a good source to learn EEG analysis*.
 
 ```python
 ##Define the condition
