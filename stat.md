@@ -37,14 +37,13 @@ y = np.array([np.mean(e.get_data(picks=roi,
 
 # check shape of result
 y.shape
-from scipy import stats 
 
 #run the stat test
 t, pval = stats.ttest_1samp(y, 0)
 print('Difference t = ', str(round(t[0], 2)), 'p = ', str(round(pval[0], 4)))
 
 ## Plot subtraction between unrelated and related condition
-#Do the subtraction
+# Do the subtraction
 diff_waves = [mne.combine_evoked([evokeds['unrelated'][participant], 
                                 evokeds['related'][participant]
                                 ],
@@ -52,7 +51,7 @@ diff_waves = [mne.combine_evoked([evokeds['unrelated'][participant],
                                 ) 
             for participant in range(len(data_files))
             ]
-#plot
+# plot
 mne.viz.plot_evoked_topomap(mne.grand_average(diff_waves), 
                             times=.400, average=0.200, 
                             show_names=True, sensors=False,
