@@ -25,7 +25,7 @@ for idx, c in enumerate(conditions):
 time_win = (.400, .600)
 roi = ('Pz', 'Oz')
 
-#get the data array
+#Get the data array
 y = np.array([np.mean(e.get_data(picks=roi, 
                                  tmin=time_win[0], 
                                  tmax=time_win[1]
@@ -35,15 +35,15 @@ y = np.array([np.mean(e.get_data(picks=roi,
               ]
              )
 
-# check shape of result
+#Check shape of result
 y.shape
 
-#run the stat test
+#Run the stat test
 t, pval = stats.ttest_1samp(y, 0)
 print('Difference t = ', str(round(t[0], 2)), 'p = ', str(round(pval[0], 4)))
 
-## Plot subtraction between unrelated and related condition
-# Do the subtraction
+##Plot subtraction between unrelated and related condition
+#Do the subtraction
 diff_waves = [mne.combine_evoked([evokeds['unrelated'][participant], 
                                 evokeds['related'][participant]
                                 ],
@@ -51,7 +51,7 @@ diff_waves = [mne.combine_evoked([evokeds['unrelated'][participant],
                                 ) 
             for participant in range(len(data_files))
             ]
-# plot
+#Plot
 mne.viz.plot_evoked_topomap(mne.grand_average(diff_waves), 
                             times=.400, average=0.200, 
                             show_names=True, sensors=False,
