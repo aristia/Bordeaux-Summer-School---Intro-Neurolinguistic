@@ -64,4 +64,26 @@ grand_avg_prime = mne.grand_average(prime)  ### here, we collapse the unrelated 
 grand_avg_target = mne.grand_average(target) ### here, we collapse the unrelated and related condition
 ```
 
+## Get peak values
+```python
+###Get peak from the average
 
+###Code from MNE
+
+def print_peak_measures(ch, tmin, tmax, lat, amp):
+    print(f"Channel: {ch}")
+    print(f"Time Window: {tmin * 1e3:.3f} - {tmax * 1e3:.3f} ms")
+    print(f"Peak Latency: {lat * 1e3:.3f} ms")
+    print(f"Peak Amplitude: {amp * 1e6:.3f} µV")
+
+
+# Get peak amplitude and latency from a good time window that contains the peak
+good_tmin, good_tmax = 0.3, 0.6
+ch, lat, amp = grand_avg_prime.get_peak(
+    ch_type="eeg", tmin=good_tmin, tmax=good_tmax, mode="neg", return_amplitude=True
+)
+
+# Print output from the good time window that contains the peak
+print("** PEAK MEASURES FROM A GOOD TIME WINDOW **")
+print_peak_measures(ch, good_tmin, good_tmax, lat, amp)
+```
