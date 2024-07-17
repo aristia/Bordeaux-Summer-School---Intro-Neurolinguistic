@@ -15,7 +15,7 @@ The following code to run the analysis is adapted from [neural data science page
 conditions = ['related', 'unrelated']
 
 ##Get the data
-data_files = glob.glob('C:/Users/jaris/Documents/summer_school/raw/*/*_N400-ave.fif')
+data_files = glob.glob('***YOUR DIRECTORY***/*/*_N400-ave.fif')
 evokeds = {}
 for idx, c in enumerate(conditions):
     evokeds[c] = [mne.read_evokeds(d)[idx] for d in data_files]
@@ -45,12 +45,12 @@ print('Difference t = ', str(round(t[0], 2)), 'p = ', str(round(pval[0], 4)))
 
 ## Plot subtraction between unrelated and related condition
 #Do the subtraction
-diff_waves = [mne.combine_evoked([evokeds['unrelated'][subj], 
-                                evokeds['related'][subj]
+diff_waves = [mne.combine_evoked([evokeds['unrelated'][participant], 
+                                evokeds['related'][participant]
                                 ],
-                                weights=[1, -1]
+                                weights=[1, -1] #this is to do the subtraction
                                 ) 
-            for subj in range(len(data_files))
+            for participant in range(len(data_files))
             ]
 #plot
 mne.viz.plot_evoked_topomap(mne.grand_average(diff_waves), 
