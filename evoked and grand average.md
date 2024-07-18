@@ -87,3 +87,12 @@ ch, lat, amp = grand_avg_prime.get_peak(
 print("** PEAK MEASURES FROM A GOOD TIME WINDOW **")
 print_peak_measures(ch, good_tmin, good_tmax, lat, amp)
 ```
+
+
+## Animate the plot 
+```python
+times = np.arange(0.05, 0.151, 0.01) ## basically this means we animate the topomap from 50 to 150 ms, and it will shows topo of each 10 ms (i.e., 50, 60, ...)
+fig, anim = ***your evoked file***.animate_topomap(times=times, ch_type="eeg", frame_rate=2, blit=False)
+```
+
+
