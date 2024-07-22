@@ -11,9 +11,9 @@ import eelbrain
 
 ## Let's start the process now
 # define the parameters
+Some part of this code is adapted from [Mateus Silvestrin's code](https://msilvestrin.me/post/n400_1/). 
 
 ```python
-### Some part of this code is adapted from https://msilvestrin.me/post/n400_1/
 
 tmin = -0.2 ###epoch starts 200 ms before the onset of the stimulus
 tmax = 0.8 ### epoch ends 800 ms after the onset of the stimulus
