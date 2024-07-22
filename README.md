@@ -5,7 +5,7 @@ There are several methods used to study the brain, one of which is electroenceph
 one of the most common analysis methods, event-related potential (ERP).</br>
 I will introduce you to the common ERP components that are normally observed in neurolinguistic studies. 
 To do this, we will analyze data from the [ERP CORE](https://erpinfo.org/erp-core) datasets provided by Steve J. Luck's lab. 
-ERP CORE has several datasets; for the purpose of this project, we will use the N400 datasets because the N400 is a common ERP component that is normally observed in neurolinguistic studies.
+ERP CORE has several datasets; for the purpose of this project, we will use the N400 datasets because it is a common ERP component that is normally observed in neurolinguistic studies.
 
 ## Plan
 **Day 1 (15/7)** : Theoritical background behind language studies and the use of EEG *(and how to design the experiment)*</br>
